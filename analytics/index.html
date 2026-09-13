@@ -199,7 +199,7 @@
           <a href="/analytics/">Analytics</a>
           <a href="/charity/">Charity <span class="heart">&hearts;</span></a>
           <a href="https://pons-fork.gitbook.io/pons-fork-docs/">Docs <span class="tag">&#8599;</span></a>
-          <a href="https://github.com/ponsfork">GitHub <span class="tag">&#8599;</span></a>
+          <a href="https://github.com/rebateprotocol">GitHub <span class="tag">&#8599;</span></a>
         </div>
         <div class="ft-col">
           <h4>Protocols</h4>
@@ -298,7 +298,7 @@ document.addEventListener("click",ev=>{const cc=ev.target.closest(".ccopy");if(!
 
 async function main(){
   let j={};
-  try{j=await (await fetch("https://raw.githubusercontent.com/ponsfork/pons-fork-stats/main/stats.json?t="+Date.now())).json();}catch(e){}
+  try{j=await (await fetch("https://raw.githubusercontent.com/rebateprotocol/pons-fork-stats/main/stats.json?t="+Date.now())).json();}catch(e){}
   const an=j.analytics||{}, tokens=j.tokens||{};
   const usd=an.ethUsd||0;
   const usdOf=eth=>usd?" <small>≈ "+fUsd((+eth)*usd)+"</small>":"";
